@@ -2,13 +2,18 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 WORKDIR /src
 
+# Copy project files
+COPY reports-service/reports-service.csproj ./
 COPY libs/SharedLibrary.csproj ./libs/
-COPY reports-service.csproj ./
+
+# Restore dependencies
 RUN dotnet restore reports-service.csproj
 
-COPY ../libs ./libs
-COPY . .
+# Copy full source
+COPY reports-service/. ./
+COPY libs/. ./libs/
 
+# Publish
 RUN dotnet publish reports-service.csproj -c Release -o /app/publish
 
 # Runtime stage
