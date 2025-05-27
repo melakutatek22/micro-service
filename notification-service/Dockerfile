@@ -11,7 +11,7 @@ RUN dotnet restore notification-service.csproj
 
 # Copy full source
 COPY notification-service/. ./
-COPY libs/. ./libs/
+COPY ../libs ./libs
 
 # Publish
 RUN dotnet publish notification-service.csproj -c Release -o /app/publish

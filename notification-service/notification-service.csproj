@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\libs\shared\shared.csproj" />
+<ProjectReference Include="..\libs\SharedLibrary.csproj" />
   </ItemGroup>
 
 </Project>

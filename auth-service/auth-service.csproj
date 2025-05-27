@@ -22,5 +22,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.0.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.7.0" />
   </ItemGroup>
+    <ItemGroup>
+<ProjectReference Include="..\libs\SharedLibrary.csproj" />
+  </ItemGroup>
 
 </Project>

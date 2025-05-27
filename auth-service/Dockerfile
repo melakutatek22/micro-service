@@ -11,7 +11,7 @@ RUN dotnet restore auth-service.csproj
 
 # Copy full source
 COPY auth-service/. ./
-COPY libs/. ./libs/
+COPY ../libs ./libs
 
 # Publish
 RUN dotnet publish auth-service.csproj -c Release -o /app/publish

@@ -11,7 +11,7 @@ RUN dotnet restore reports-service.csproj
 
 # Copy full source
 COPY reports-service/. ./
-COPY libs/. ./libs/
+COPY ../libs ./libs
 
 # Publish
 RUN dotnet publish reports-service.csproj -c Release -o /app/publish
