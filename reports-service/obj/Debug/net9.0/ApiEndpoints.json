@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "ReportsService.Controllers.JobSeekerReportController",
+    "Method": "GetAll",
+    "RelativePath": "api/reports/jobseekers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

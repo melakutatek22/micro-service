@@ -1,0 +1,29 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Notification Service API",
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5124",
+      "description": "Notification Service - Dev"
+    }
+  ],
+  "paths": { },
+  "components": {
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter 'Bearer {your JWT token}'",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

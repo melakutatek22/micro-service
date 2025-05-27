@@ -1,0 +1,242 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AllMyWorkingFile\\repos\\common\\auth-service\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ECECAAF-D922-4D68-815B-AB691F7B6566}|..\\..\\recruitment\\jobseeker-service\\jobseeker-service.csproj|d:\\allmyworkingfile\\repos\\recruitment\\jobseeker-service\\controllers\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ECECAAF-D922-4D68-815B-AB691F7B6566}|..\\..\\recruitment\\jobseeker-service\\jobseeker-service.csproj|d:\\allmyworkingfile\\repos\\recruitment\\jobseeker-service\\events\\notificationevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\consumers\\notificationeventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\notification-service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\events\\notificationevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC14745A-DF3B-40F2-83F5-65D82CDDF09B}|..\\..\\notification-service\\notification-service.csproj|d:\\allmyworkingfile\\repos\\notification-service\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JobSeekerController.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\recruitment\\jobseeker-service\\Controllers\\JobSeekerController.cs",
+              "RelativeDocumentMoniker": "..\\..\\recruitment\\jobseeker-service\\Controllers\\JobSeekerController.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\recruitment\\jobseeker-service\\Controllers\\JobSeekerController.cs",
+              "RelativeToolTip": "..\\..\\recruitment\\jobseeker-service\\Controllers\\JobSeekerController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAqwE0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:08:46.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NotificationEvent.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\recruitment\\jobseeker-service\\Events\\NotificationEvent.cs",
+              "RelativeDocumentMoniker": "..\\..\\recruitment\\jobseeker-service\\Events\\NotificationEvent.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\recruitment\\jobseeker-service\\Events\\NotificationEvent.cs",
+              "RelativeToolTip": "..\\..\\recruitment\\jobseeker-service\\Events\\NotificationEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:08:19.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotificationEventConsumer.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\Consumers\\NotificationEventConsumer.cs",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\Consumers\\NotificationEventConsumer.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\Consumers\\NotificationEventConsumer.cs",
+              "RelativeToolTip": "..\\..\\notification-service\\Consumers\\NotificationEventConsumer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:06:36.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\Properties\\launchSettings.json",
+              "RelativeToolTip": "..\\..\\notification-service\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-29T05:55:49.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotificationEvent.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\Events\\NotificationEvent.cs",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\Events\\NotificationEvent.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\Events\\NotificationEvent.cs",
+              "RelativeToolTip": "..\\..\\notification-service\\Events\\NotificationEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:05:53.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\..\\notification-service\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:02:11.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "notification-service",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\notification-service.csproj",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\notification-service.csproj",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\notification-service.csproj",
+              "RelativeToolTip": "..\\..\\notification-service\\notification-service.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-29T06:01:08.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\Program.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\Program.cs",
+              "RelativeToolTip": "..\\..\\notification-service\\Program.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAswFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T05:54:28.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\Models\\Notification.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\Models\\Notification.cs",
+              "RelativeToolTip": "..\\..\\notification-service\\Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:01:26.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\appsettings.json",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\appsettings.json",
+              "RelativeToolTip": "..\\..\\notification-service\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-29T05:56:02.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\appsettings.Development.json",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\appsettings.Development.json",
+              "RelativeToolTip": "..\\..\\notification-service\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-29T05:55:57.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\Controllers\\NotificationController.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "..\\..\\notification-service\\Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T05:52:34.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "D:\\AllMyWorkingFile\\repos\\notification-service\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "..\\..\\notification-service\\Services\\NotificationService.cs",
+              "ToolTip": "D:\\AllMyWorkingFile\\repos\\notification-service\\Services\\NotificationService.cs",
+              "RelativeToolTip": "..\\..\\notification-service\\Services\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T05:52:32.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAALwUAAAAAAAAAAAmwL8UAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-29T04:38:31.742Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
