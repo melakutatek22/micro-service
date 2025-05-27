@@ -2,8 +2,7 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
 
 jobs:
@@ -26,40 +25,54 @@ jobs:
           --health-retries=5
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '9.0.x'
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
 
-    - name: Restore dependencies
-      run: dotnet restore
+      - name: Restore dependencies
+        run: |
+          dotnet restore ./auth-service/auth-service.csproj
+          dotnet restore ./notification-service/notification-service.csproj
+          dotnet restore ./reports-service/reports-service.csproj
 
-    - name: Build
-      run: dotnet build --no-restore --configuration Release
+      - name: Build projects
+        run: |
+          dotnet build ./auth-service/auth-service.csproj --no-restore --configuration Release
+          dotnet build ./notification-service/notification-service.csproj --no-restore --configuration Release
+          dotnet build ./reports-service/reports-service.csproj --no-restore --configuration Release
 
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      - name: Run tests
+        run: |
+          dotnet test ./auth-service/auth-service.csproj --no-build
+          dotnet test ./notification-service/notification-service.csproj --no-build
+          dotnet test ./reports-service/reports-service.csproj --no-build
 
   docker-build:
     needs: build-and-test
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
-    - name: Login to DockerHub
-      uses: docker/login-action@v3
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Log in to DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build and push Docker images
-      run: |
-        docker-compose -f docker-compose.yml build
-        echo "Replace with docker-compose push or docker tag & push as needed"
+      - name: Build Docker images
+        run: docker-compose build
+
+      # Optional: push Docker images
+      # - name: Push Docker images
+      #   run: docker-compose push
+      
+    
