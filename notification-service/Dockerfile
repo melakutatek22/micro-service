@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 WORKDIR /src
 
-COPY ../libs/SharedLibrary.csproj ./libs/
+#COPY ../libs/SharedLibrary.csproj ./libs/
 COPY notification-service.csproj ./
 RUN dotnet restore notification-service.csproj
 
