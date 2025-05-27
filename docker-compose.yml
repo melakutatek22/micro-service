@@ -1,0 +1,72 @@
+services:
+  auth-service:
+    build:
+      context: .
+      dockerfile: auth-service/Dockerfile
+    depends_on:
+    - auth-service-db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=auth-service-db;Port=5432;Database=authservicedb;Username=postgres;Password=yourpassword
+    ports:
+    - 5000:80
+  auth-service-db:
+    environment:
+      POSTGRES_DB: authservicedb
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_USER: postgres
+    image: postgres:16
+    ports:
+    - 5432:5432
+    restart: always
+    volumes:
+    - pgdata_auth-service:/var/lib/postgresql/data
+  notification-service:
+    build:
+      context: .
+      dockerfile: notification-service/Dockerfile
+    depends_on:
+    - notification-service-db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=notification-service-db;Port=5432;Database=notificationservicedb;Username=postgres;Password=yourpassword
+    ports:
+    - 5001:80
+  notification-service-db:
+    environment:
+      POSTGRES_DB: notificationservicedb
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_USER: postgres
+    image: postgres:16
+    ports:
+    - 5433:5432
+    restart: always
+    volumes:
+    - pgdata_notification-service:/var/lib/postgresql/data
+  reports-service:
+    build:
+      context: .
+      dockerfile: reports-service/Dockerfile
+    depends_on:
+    - reports-service-db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=reports-service-db;Port=5432;Database=reportsservicedb;Username=postgres;Password=yourpassword
+    ports:
+    - 5002:80
+  reports-service-db:
+    environment:
+      POSTGRES_DB: reportsservicedb
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_USER: postgres
+    image: postgres:16
+    ports:
+    - 5434:5432
+    restart: always
+    volumes:
+    - pgdata_reports-service:/var/lib/postgresql/data
+version: '3.8'
+volumes:
+  pgdata_auth-service: null
+  pgdata_notification-service: null
+  pgdata_reports-service: null
