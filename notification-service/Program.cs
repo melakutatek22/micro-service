@@ -144,5 +144,5 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Notification Service v1");
 });
-
+app.MapGet("/", () => Results.Ok("Auth Service is running 🚀"));
 app.Run();

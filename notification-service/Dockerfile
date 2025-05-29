@@ -3,16 +3,17 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 WORKDIR /src
 
 # Copy project files
-COPY notification-service/notification-service.csproj ./
+COPY notification-service/notification-service.csproj ./notification-service/
 COPY libs/SharedLibrary.csproj ./libs/
 
+
 # Restore dependencies
-RUN dotnet restore notification-service.csproj
+WORKDIR /src/notification-service
+RUN dotnet restore
 
 # Copy full source
-COPY notification-service/. ./
-COPY ../libs ./libs
-
+COPY auth-service/. ./
+COPY libs ../libs               
 # Publish
 RUN dotnet publish notification-service.csproj -c Release -o /app/publish
 

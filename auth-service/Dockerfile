@@ -6,6 +6,7 @@ WORKDIR /src
 COPY auth-service/auth-service.csproj ./auth-service/
 COPY libs/SharedLibrary.csproj ./libs/
 
+
 # Restore dependencies
 WORKDIR /src/auth-service
 RUN dotnet restore

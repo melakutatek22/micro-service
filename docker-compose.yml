@@ -7,7 +7,7 @@ services:
     - auth-service-db
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__DefaultConnection: Host=auth-service-db;Port=5432;Database=auth_db;Username=postgres;Password=Password
+      ConnectionStrings__DefaultConnection: Host=auth-service-db;Port=5432;Database=auth_db;Username=postgres;Password=password
     ports:
     - 8080:8080
     networks:
@@ -16,72 +16,75 @@ services:
   auth-service-db:
     environment:
       POSTGRES_DB: auth_db
-      POSTGRES_PASSWORD: Password
+      POSTGRES_PASSWORD: password
       POSTGRES_USER: postgres
     image: postgres:16
     ports:
-    - 5432:5432
+    - 5433:5432
     restart: always
     volumes:
     - pgdata_auth-service:/var/lib/postgresql/data
     networks:
      - app-network
-#   notification-service:
-#     build:
-#       context: .
-#       dockerfile: notification-service/Dockerfile
-#     depends_on:
-#     - notification-service-db
-#     environment:
-#       ASPNETCORE_ENVIRONMENT: Development
-#       ConnectionStrings__DefaultConnection: Host=notification-service-db;Port=5432;Database=notification_db;Username=postgres;Password=password2
-#     ports:
-#     - 5001:80
-#     networks:
-#       - app-network
-#   notification-service-db:
-#     environment:
-#       POSTGRES_DB: notification_db
-#       POSTGRES_PASSWORD: password2
-#       POSTGRES_USER: postgres
-#     image: postgres:16
-#     ports:
-#     - 5433:5432
-#     restart: always
-#     volumes:
-#     - pgdata_notification-service:/var/lib/postgresql/data
-#     networks:
-#       - app-network
-#   reports-service:
-#     build:
-#       context: .
-#       dockerfile: reports-service/Dockerfile
-#     depends_on:
-#     - reports-service-db
-#     environment:
-#       ASPNETCORE_ENVIRONMENT: Development
-#       ConnectionStrings__DefaultConnection: Host=reports-service-db;Port=5432;Database=report_db;Username=postgres;Password=password3
-#     ports:
-#     - 5002:80
-#     networks:
-#       - app-network
-#   reports-service-db:
-#     environment:
-#       POSTGRES_DB: report_db
-#       POSTGRES_PASSWORD: password3
-#       POSTGRES_USER: postgres
-#     image: postgres:16
-#     ports:
-#     - 5434:5432
-#     restart: always
-#     volumes:
-#     - pgdata_reports-service:/var/lib/postgresql/data
-#     networks:
-#       - app-network
-# version: '3.8'
+# Uncomment the following sections to include notification and reports services
+#   Uncomment the following sections to include notification and reports services
+
+  notification-service:
+    build:
+      context: .
+      dockerfile: notification-service/Dockerfile
+    depends_on:
+    - notification-service-db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=notification-service-db;Port=5432;Database=notification_db;Username=postgres;Password=password
+    ports:
+    - 8081:8081
+    networks:
+      - app-network
+  notification-service-db:
+    environment:
+      POSTGRES_DB: notification_db
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+    image: postgres:16
+    ports:
+    - 5434:5432
+    restart: always
+    volumes:
+    - pgdata_notification-service:/var/lib/postgresql/data
+    networks:
+      - app-network
+  # reports-service:
+  #   build:
+  #     context: .
+  #     dockerfile: reports-service/Dockerfile
+  #   depends_on:
+  #   - reports-service-db
+  #   environment:
+  #     ASPNETCORE_ENVIRONMENT: Development
+  #     ConnectionStrings__DefaultConnection: Host=reports-service-db;Port=5432;Database=report_db;Username=postgres;Password=password3
+  #   ports:
+  #   - 5002:80
+  #   networks:
+  #     - app-network
+  # reports-service-db:
+  #   environment:
+  #     POSTGRES_DB: report_db
+  #     POSTGRES_PASSWORD: password3
+  #     POSTGRES_USER: postgres
+  #   image: postgres:16
+  #   ports:
+  #   - 5434:5432
+  #   restart: always
+  #   volumes:
+  #   - pgdata_reports-service:/var/lib/postgresql/data
+  #   networks:
+  #     - app-network
+version: '3.8'
 volumes:
   pgdata_auth-service: null
-  # pgdata_notification-service: null
+  pgdata_notification-service: null
   # pgdata_reports-service: null
 
 networks:
