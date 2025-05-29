@@ -110,5 +110,6 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "auth-service v1");
 });
+app.MapGet("/", () => Results.Ok("Auth Service is running 🚀"));
 
 app.Run();

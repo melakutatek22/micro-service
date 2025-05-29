@@ -3,16 +3,16 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 WORKDIR /src
 
 # Copy project files
-COPY auth-service/auth-service.csproj ./
+COPY auth-service/auth-service.csproj ./auth-service/
 COPY libs/SharedLibrary.csproj ./libs/
 
 # Restore dependencies
-RUN dotnet restore auth-service.csproj
+WORKDIR /src/auth-service
+RUN dotnet restore
 
 # Copy full source
 COPY auth-service/. ./
-COPY ../libs ./libs
-
+COPY libs ../libs               
 # Publish
 RUN dotnet publish auth-service.csproj -c Release -o /app/publish
 

@@ -408,8 +408,6 @@ C:\Users\melaku.tatek\Desktop\micro-service\auth-service\bin\Debug\net9.0\zh-Han
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.csproj.AssemblyReference.cache
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.AssemblyInfoInputs.cache
-C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.AssemblyInfo.cs
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.csproj.CoreCompileInputs.cache
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.MvcApplicationPartsAssemblyInfo.cache
@@ -430,3 +428,5 @@ C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\refint
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.pdb
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\auth-service.genruntimeconfig.cache
 C:\Users\melaku.tatek\Desktop\micro-service\auth-service\obj\Debug\net9.0\ref\auth-service.dll
+C:\Users\melaku.tatek\Desktop\micro-service\auth-service\bin\Debug\net9.0\SharedLibrary.dll
+C:\Users\melaku.tatek\Desktop\micro-service\auth-service\bin\Debug\net9.0\SharedLibrary.pdb
