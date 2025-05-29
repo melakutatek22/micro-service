@@ -72,7 +72,7 @@ jobs:
         run: docker compose build
 
       # Optional: push Docker images
-      # - name: Push Docker images
-      #   run: docker-compose push
+      - name: Push Docker images
+        run: docker-compose push
 
     
