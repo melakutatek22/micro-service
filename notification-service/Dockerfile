@@ -12,7 +12,7 @@ WORKDIR /src/notification-service
 RUN dotnet restore
 
 # Copy full source
-COPY auth-service/. ./
+COPY notification-service/. ./
 COPY libs ../libs               
 # Publish
 RUN dotnet publish notification-service.csproj -c Release -o /app/publish
