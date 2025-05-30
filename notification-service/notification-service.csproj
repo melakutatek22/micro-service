@@ -5,11 +5,19 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>notification_service</RootNamespace>
-     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MailKit" Version="4.11.0" />
+<!-- New added version-->
+  <PackageReference Include="MassTransit" Version="8.5.0-develop.2304" />
+  <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="7.0.0" />
+  <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
+  <PackageReference Include="System.Memory" Version="4.5.5" />
+
     <PackageReference Include="MassTransit" Version="8.4.0" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.3" />

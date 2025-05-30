@@ -68,6 +68,10 @@ builder.Services.AddSwaggerGen(options =>
         Description = config["Swagger:Description"] ?? "Notification Local"
     });
 });
+// --------------------  Add this to your Program.cs before any MassTransit configuration:
+ --------------------
+AppContext.SetSwitch("System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization", true);
+
 
 // -------------------- MassTransit (RabbitMQ) --------------------
 builder.Services.AddScoped<NotifierService>();

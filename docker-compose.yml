@@ -39,7 +39,7 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__DefaultConnection: Host=notification-service-db;Port=5432;Database=notification_db;Username=postgres;Password=password
     ports:
-    - 8081:8081
+    - 8081:8080
     networks:
       - app-network
   notification-service-db:

@@ -9,6 +9,10 @@ COPY libs/SharedLibrary.csproj ./libs/
 
 # Restore dependencies
 WORKDIR /src/notification-service
+# 3. Update your Dockerfile with these commands before dotnet restore:
+RUN dotnet nuget add source https://www.myget.org/F/masstransit/api/v3/index.json -n massTransitPreview
+RUN dotnet nuget locals all --clear
+
 RUN dotnet restore
 
 # Copy full source
