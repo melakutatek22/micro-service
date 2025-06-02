@@ -1,28 +1,30 @@
 # Build stage
-FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy project files
 COPY notification-service/notification-service.csproj ./notification-service/
 COPY libs/SharedLibrary.csproj ./libs/
+COPY notification-service/nuget.config ./
 
-
-# Restore dependencies
+# Set working directory to the project folder
 WORKDIR /src/notification-service
-# 3. Update your Dockerfile with these commands before dotnet restore:
-RUN dotnet nuget add source https://www.myget.org/F/masstransit/api/v3/index.json -n massTransitPreview
+
+# Clear NuGet caches
 RUN dotnet nuget locals all --clear
 
+# Restore dependencies
 RUN dotnet restore
 
-# Copy full source
+# Copy the rest of the source code
 COPY notification-service/. ./
-COPY libs ../libs               
-# Publish
+COPY libs ../libs
+
+# Publish the application
 RUN dotnet publish notification-service.csproj -c Release -o /app/publish
 
 # Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:9.0-preview
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/publish .
 

@@ -81,7 +81,7 @@ services:
   #   - pgdata_reports-service:/var/lib/postgresql/data
   #   networks:
   #     - app-network
-version: '3.8'
+#version: '3.8'
 volumes:
   pgdata_auth-service: null
   pgdata_notification-service: null

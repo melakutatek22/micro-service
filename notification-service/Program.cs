@@ -68,9 +68,9 @@ builder.Services.AddSwaggerGen(options =>
         Description = config["Swagger:Description"] ?? "Notification Local"
     });
 });
-// --------------------  Add this to your Program.cs before any MassTransit configuration:
- --------------------
+// Enable unsafe binary formatter for MassTransit
 AppContext.SetSwitch("System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization", true);
+
 
 
 // -------------------- MassTransit (RabbitMQ) --------------------
@@ -148,6 +148,6 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Notification Service v1");
 });
-app.MapGet("/", () => Results.Ok("Auth Service is running 🚀"));
+app.MapGet("/", () => Results.Ok("Notification Service is running 🚀"));
 
 app.Run();
